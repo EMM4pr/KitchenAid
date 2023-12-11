@@ -1,8 +1,20 @@
-<h1> You are booking the <%= @kitchen.name %></h1>
+<%= link_to "← go back", kitchens_path, class:"link" %>
 
-<%= simple_form_for([@kitchen, @booking]) do |f| %>
-  <%= f.input :total_price %>
-  <%= f.input :start_date %>
-  <%= f.input :end_date %>
-  <%= f.submit %>
-<% end %>
+<p style="margin-top: 50px;color: green"> You booked the <%= @booking.kitchen.name %></p>
+
+    <div class="new-container">
+    <%= cl_image_tag @kitchen.photo.key%>
+      <div class="text-container">
+        <h3> <%=@booking.kitchen.name%></h3>
+        <%# Price per Day %>
+        <p class="details" > Price: <%=@booking.kitchen.price%>€ x <%= @days %> days  </p>
+        <%# Booking Duration %>
+        <%# <% <p class="details" > Duration: <%= @days </p> %>
+        <%# Total Price %>
+        <p class="details" > Total Price: €<%= @total_price %> </p>
+      </div>
+    </div>
+
+
+<%= link_to "Leave a review", new_booking_review_path(@booking), class: "button link" %>
+

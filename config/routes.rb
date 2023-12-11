@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
+  root "kitchens#index"
+
   resources :kitchens do
-    resources :bookings, only: %i[create]
-  end
-  resources :bookings, only: %i[destroy]
-  resources :bookings, only: %i[create] do
-    resources :reviews, only: [:new]
+    resources :bookings, only: %i[new create show]
   end
 
-    devise_for :users
+  # resources :bookings, only: %i[destroy new create]
 
+  resources :bookings do
+    resources :reviews, only: [:new, :create]
+  end
+
+  get "dashboard", to: "pages#dashboard"
+
+  devise_for :users
 
   # root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -20,4 +25,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  resources :kitchens
 end
