@@ -4,15 +4,11 @@
 <%= link_to "← go back", kitchens_path, class:"link" %>
 
 <%# Kitchen Info %>
-
-
-<%# <p>Find me in app/views/bookings/new.html.erb</p> %>
-
 <div class="d-flex justify-content-around">
   <div class="item-container">
     <div class="info-container">
       <%= cl_image_tag @kitchen.photo.key%>
-      <div class="mt-3">
+      <div class="mt-1">
         <h3 class="card-title"><%= @kitchen.name %></h3>
         <p class="item-body">
           Rating: ★<%= @kitchen.average_rating %>/5
@@ -22,17 +18,7 @@
         </p>
       </div>
     </div>
-    <div class="divider"></div>
-    <div class="owner-card">
-      <%= cl_image_tag @kitchen.user.photo.key, height: 300, width: 400, class: "card-img-top img-fluid", crop: :fill %>
-      <div>
-        <p>
-          The owner of this kitchen is <%= @kitchen.user.first_name %>
-        </p>
-        <p>
-        </p>
-       </div>
-    </div>
+
 
 
     <div class="booking-container">

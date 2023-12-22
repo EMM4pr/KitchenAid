@@ -60,7 +60,7 @@ kitchen.save!
 # review.save!
 
 
-kitchen = Kitchen.new(name: "Food Dehydrator", availiability: true, description: "Removes moisture from foods to preserve them or create healthy snacks like dried fruits or jerky.", tag: "Outdoor_Cooking", user: user, price: rand(1..100))
+kitchen = Kitchen.new(name: "Food Dehydrator", availiability: true, description: "Removes moisture from foods to preserve them or create healthy snacks like dried fruits.", tag: "Outdoor_Cooking", user: user, price: rand(1..100))
 file = URI.open("https://www.sencor.com/Sencor/media/content/products/abf81e6e-e34b-4304-8f41-3f1f0816c8c5.jpg")
 kitchen.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 kitchen.save!
