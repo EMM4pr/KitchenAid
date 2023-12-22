@@ -16,7 +16,7 @@ Follow these steps to set up and explore the KitchenAid Website locally:
 
 3. Navigate to the project directory.
 
-   `cd kitchenaid-website`
+   `cd KitchenAid`
 
 4. Run bundle install to install dependencies.
 
