@@ -35,5 +35,6 @@ Follow these steps to set up and explore the KitchenAid Website locally:
 8. Visit the website in your browser at http://localhost:3000.
 
 ## Acknowledgments
-Developed by a group of three at Le Wagon: [@alexandraholz](https://github.com/alexandraholz), [@shubsamania](https://github.com/shubsamania) & myself
+Collaboratively developed by a group of three at Le Wagon: [@alexandraholz](https://github.com/alexandraholz), [@shubsamania](https://github.com/shubsamania) & myself
+
 Feel free to explore, contribute, and enjoy the KitchenAid Website!
