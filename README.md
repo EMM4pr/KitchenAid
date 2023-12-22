@@ -1,6 +1,6 @@
 # KitchenAid Website
 
-Welcome to the project KitchenAid!
+Welcome to my project KitchenAid!
 
 ## Overview
 
