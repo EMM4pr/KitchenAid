@@ -11,23 +11,28 @@ The KitchenAid Website is a platform designed for renting kitchen appliances, in
 Follow these steps to set up and explore the KitchenAid Website locally:
 
 1. Clone the repository.
+
    `git clone https://github.com/EMM4pr/KitchenAid.git`
 
-2. Navigate to the project directory.
-  cd kitchenaid-website
+3. Navigate to the project directory.
 
-3. Run bundle install to install dependencies.
-  bundle install
+   `cd kitchenaid-website`
 
-4. Set up the database and seed initial data.
-  `rails db:seed`
+4. Run bundle install to install dependencies.
 
-5. (Optional) Set up Cloudinary for image hosting.
+   `bundle install`
 
-6. Start the Rails server.
-  rails s
+5. Set up the database and seed initial data.
 
-7. Visit the website in your browser at http://localhost:3000.
+   `rails db:seed`
+
+6. (Optional) Set up Cloudinary for image hosting.
+
+7. Start the Rails server.
+ 
+   `rails s`
+
+8. Visit the website in your browser at http://localhost:3000.
 
 ## Acknowledgments
 Developed by a group of three at Le Wagon.
